@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>CPS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header header--border">
+        <button
+          type="button"
+          class="button button__burger button--margin--standart button--hide button--vision"
+        >
+          <div
+            class="icons-wrapper icons-wrapper--margin-right icons-wrapper--padding-top--twelve"
+          >
+            <img
+              src="./img/menu.svg"
+              alt="Открыть меню"
+              class="button__burger-image"
+            />
+          </div>
+        </button>
+
+        <a class="logo header__logo">
+          <img
+            src="./img/logo.svg"
+            alt="CPS логотип"
+            class="logo__image"
+            width="97"
+            height="51"
+        /></a>
+
+        <button
+          type="button"
+          class="button button__call button--hide button--margin--standart button--position--right"
+        >
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./img/phone.svg"
+              alt="Позвонить"
+              class="button__call-image"
+            />
+          </div>
+        </button>
+
+        <button
+          type="button"
+          class="button button__chat button--hide button--margin--standart"
+        >
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./img/mail.svg"
+              alt="Перейти в чат"
+              class="button__chat-image"
+            />
+          </div>
+        </button>
+
+        <button type="button" class="button button--hide button--margin--huge">
+          <div class="icons-wrapper icons-wrapper--padding-top--ten">
+            <img
+              src="./img/profile.svg"
+              alt="Ваш профиль"
+              class="button__profile-image"
+            />
+          </div>
+        </button>
+
+        <button
+          type="button"
+          class="button button--margin--standart button--position--right button--position--normal button--content-repair--before button--repair--position-left"
+        >
+          <div class="icons-wrapper icons-wrapper--padding-top--ten">
+            <img
+              src="./img/status.svg"
+              alt="Оставить заявку на ремонт"
+              class="button__repair-image"
+            />
+          </div>
+        </button>
+        <button
+          type="button"
+          class="button button--content-check-status--before button--position--normal button--check-status--position-right"
+        >
+          <div class="icons-wrapper icons-wrapper--padding-top--ten">
+            <img
+              src="./img/application.svg"
+              alt="Узнать статус ремонта"
+              class="button__check-status-image"
+            />
+          </div>
+        </button>
+      </header>
+      <main class="main main--margin--left">
+        <h1 class="main__header">Услуги и сервисы</h1>
+        <nav class="nav-bar">
+          <ul class="nav-bar__list">
+            <li class="nav-bar__item ">
+              <a class=" nav-bar__a nav-bar__a--active">
+                Ремонтируемые устройства
+              </a>
+            </li>
+            <li class="nav-bar__item">
+              <a class=" nav-bar__a">
+                Ремонтируемые бренды
+              </a>
+            </li>
+            <li class="nav-bar__item">
+              <a class=" nav-bar__a">
+                Цены на услуги
+              </a>
+            </li>
+
+            <li class="nav-bar__item">
+              <a class=" nav-bar__a">
+                Адреса сервисных центров
+              </a>
+            </li>
+
+            <li class="nav-bar__item">
+              <a class=" nav-bar__a">
+                Специальные цены
+              </a>
+            </li>
+
+            <li class="nav-bar__item">
+              <a class=" nav-bar__a">Отзывы</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <section class="repaired-devices">
+          <div class="repaired-devices__wrapper">
+            <p class="repaired-devices__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <button class="repaired-devices__button-more button">
+              <span>Читать далее</span>
+            </button>
+          </div>
+          <figure>
+            <img
+              src="./img/main-img.png"
+              alt="Фото вывески с логотипом"
+              class="repaired-devices__image"
+            />
+          </figure>
+        </section>
+        <section class="services brands">
+          <header class="services__header">
+            <h2 class="services__title">Ремонт техники различных брендов</h2>
+          </header>
+          <div
+            class="services__container swiper swiper-initialized swiper-horizontal swiper-css-mode"
+          >
+            <ul
+              class="services__list swiper-wrapper services__list--visibilite--hidden"
+            >
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/lenovo.png"
+                  alt="Бренд Леново"
+                  class="services__brand-logo"
+                  width="108"
+                  height="32"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/samsung.png"
+                  alt="Бренд Самсунг"
+                  class="services__brand-logo"
+                  width="116"
+                  height="39"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/iphone.png"
+                  alt="Бренд Айфон"
+                  class="services__brand-logo"
+                  width="44"
+                  height="44"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/viewsonic.png"
+                  alt="Бренд Вьюсоник"
+                  class="services__brand-logo"
+                  width="128"
+                  height="21"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/bosch.png"
+                  alt="Бренд Бош"
+                  class="services__brand-logo"
+                  width="128"
+                  height="29"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/hp.png"
+                  alt="Бренд Эйчпи"
+                  class="services__brand-logo"
+                  width="52"
+                  height="52"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/acer.png"
+                  alt="Бренд Эйсер"
+                  class="services__brand-logo"
+                  width="94"
+                  height="24"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/sony.png"
+                  alt="Бренд Сони"
+                  class="services__brand-logo"
+                  width="128"
+                  height="26"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/lenovo.png"
+                  alt="Бренд Леново"
+                  class="services__brand-logo"
+                  width="108"
+                  height="32"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/samsung.png"
+                  alt="Бренд Самсунг"
+                  class="services__brand-logo"
+                  width="116"
+                  height="39"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item swiper-slide"
+              >
+                <img
+                  src="./img/iphone.png"
+                  alt="Бренд Айфон"
+                  class="services__brand-logo"
+                  width="44"
+                  height="44"
+                />
+                <button class="button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <div class="services__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"></div>
+          <button class="button services__button-more" type="button">
+            Показать все
+          </button>
+        </section>
+        <section class="services tech">
+          <header class="services__header">
+            <h2 class="services__title">Ремонт различных видов техники</h2>
+          </header>
+          <div
+            class="services__container swiper swiper-initialized swiper-horizontal swiper-css-mode"
+          >
+            <ul
+              class="services__list swiper-wrapper services__list--visibilite--hidden"
+            >
+              <li
+                class="services__item services__item--size--big swiper-slide"
+ 
+              >
+                <p class="services__device">Ремонт ноутбуков</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт планшетов</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт ПК</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт мониторов</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт ноутбуков</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт планшетов</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт ПК</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт мониторов</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+              <li
+                class="services__item services__item--size--big swiper-slide"
+              >
+                <p class="services__device">Ремонт ноутбуков</p>
+                <button class="button services__button" type="button">
+                  <div class="services__icons-wrapper">
+                    <img
+                      src="./img/dropdown.svg"
+                      alt="О бренде"
+                      class="button__dropdown"
+                    />
+                  </div>
+                </button>
+              </li>
+            </ul>
+            <div
+              class="services__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+              ></div>
+            </div>
+
+          <button class="button services__button-more" type="button">
+            Показать все
+          </button>
+        </section>
+        <section class="services">
+          <header class="services__header">
+            <h2 class="services__title">цены на услуги</h2>
+          </header>
+          <div
+            class="services__container swiper swiper-initialized swiper-horizontal swiper-css-mode"
+          >
+            <ul
+              class="services__list swiper-wrapper services__list--size--large"
+            >
+              <li
+                class="services__item services__item--size--large swiper-slide"
+              >
+                <p class="services__service">Диагностика</p>
+                <p class="services__price">Бесплатно</p>
+                <div class="services__wrapper">
+                  <p class="services__time">30 мин</p>
+                  <button class="button services__button" type="button">
+                    <div
+                      class="services__icons-wrapper services__icons-wrapper--color--pink"
+                    >
+                      <p class="services__order">заказать</p>
+                      <img
+                        src="./img/dropdown-white.svg"
+                        alt="О бренде"
+                        class="button__dropdown services__dropdown-img"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="services__item services__item--size--large swiper-slide"
+              >
+                <p class="services__service">Замена дисплея</p>
+                <p class="services__price">1 000 ₽</p>
+                <div class="services__wrapper">
+                  <p class="services__time">30-120 мин</p>
+                  <button class="button services__button" type="button">
+                    <div
+                      class="services__icons-wrapper services__icons-wrapper--color--pink"
+                    >
+                      <p class="services__order">заказать</p>
+                      <img
+                        src="./img/dropdown-white.svg"
+                        alt="О бренде"
+                        class="button__dropdown services__dropdown-img"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="services__item services__item--size--large swiper-slide"
+              >
+                <p class="services__service">Замена полифонического динамика</p>
+                <p class="services__price">1 000 ₽</p>
+                <div class="services__wrapper">
+                  <p class="services__time">30-120 мин</p>
+                  <button class="button services__button" type="button">
+                    <div
+                      class="services__icons-wrapper services__icons-wrapper--color--pink"
+                    >
+                      <p class="services__order">заказать</p>
+                      <img
+                        src="./img/dropdown-white.svg"
+                        alt="О бренде"
+                        class="button__dropdown services__dropdown-img"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="services__item services__item--size--large swiper-slide"
+              >
+                <p class="services__service"
+                  >Тестирование с выдачей технического заключения</p
+                >
+                <p class="services__price">1 000 ₽</p>
+                <div class="services__wrapper">
+                  <p class="services__time">30-120 мин</p>
+                  <button class="button services__button" type="button">
+                    <div
+                      class="services__icons-wrapper services__icons-wrapper--color--pink"
+                    >
+                      <p class="services__order">заказать</p>
+                      <img
+                        src="./img/dropdown-white.svg"
+                        alt="О бренде"
+                        class="button__dropdown services__dropdown-img"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="services__item services__item--size--large swiper-slide"
+              >
+                <p class="services__service">Замена программного обеспечения</p>
+                <p class="services__price">1 000 ₽</p>
+                <div class="services__wrapper">
+                  <p class="services__time">30-120 мин</p>
+                  <button class="button services__button" type="button">
+                    <div
+                      class="services__icons-wrapper services__icons-wrapper--color--pink"
+                    >
+                      <p class="services__order">заказать</p>
+                      <img
+                        src="./img/dropdown-white.svg"
+                        alt="О бренде"
+                        class="button__dropdown services__dropdown-img"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <div
+              class="services__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"
+              ></div>
+           </div>
+          <p class="services__description"
+            >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p
+          >
+          <button type="button" class="services__proposal"
+            >Получить коммерческое предложение</button
+          >
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <p class="footer__copyright"
+            >© 2019 CPS <br />
+            Разработано командой Apesong </p
+          ><a class="footer__privacy">Политика конфиденциальности</a>
+          <p class="footer__description"
+            >Информация, размещенная на данной странице, не является публичной
+            офертой</p
+          >
+        </div>
+      </footer>
+      <div class="outside outside--position--hidden"></div>
+      <aside class="sidebar sidebar--position--hidden">
+        <header class="sidebar__header">
+          <button class="button sidebar__button" type="button">
+            <div class="icons-wrapper icons-wrapper--padding-top">
+              <img
+                src="./img/exit.svg"
+                alt="Закрыть меню"
+                class="button__noburger-image"
+              /> </div></button
+          ><a class="logo logo--margin--inline"
+            ><img
+              src="./img/logo.svg"
+              alt="CPS логотип"
+              class="logo__image" /></a
+          ><button class="button" type="button">
+            <div class="icons-wrapper icons-wrapper--padding-top">
+              <img
+                src="./img/search.svg"
+                alt="Поиск"
+                class="button__search-image"
+              />
+            </div>
+          </button>
+        </header>
+        <section class="sidebar__content">
+          <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Ремонт техники</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Услуги и сервисы</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Корпоративным клиентам</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Продавцам техники</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Партнерам</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Производителям</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Наши сервисные центры</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <footer class="sidebar__footer footer">
+            <div class="footer__icons-wrapper">
+              <button class="button button__call" type="button">
+                <div class="icons-wrapper icons-wrapper--padding-top">
+                  <img
+                    src="./img/phone.svg"
+                    alt="Позвонить"
+                    class="button__call-image"
+                  /> </div></button
+              ><button class="button button__chat" type="button">
+                <div class="icons-wrapper icons-wrapper--padding-top">
+                  <img
+                    src="./img/mail.svg"
+                    alt="Перейти в чат"
+                    class="button__chat-image"
+                  /> </div></button
+              ><button class="button" type="button">
+                <div class="icons-wrapper icons-wrapper--padding-top">
+                  <img
+                    src="./img/profile.svg"
+                    alt="Ваш профиль"
+                    class="button__profile-image"
+                  />
+                </div>
+              </button>
+            </div>
+            <a href="mailto:mail@cps.com" class="sidebar__mail">mail@cps.com</a
+            ><a href="tel:+78008908900" class="sidebar__tel">8 800 890 8900</a>
+            <ul class="footer__lang-list">
+              <li class="footer__lang-item footer__lang-item--active"
+                ><button class="button" type="button">RU</button></li
+              >
+              <li class="footer__lang-item"
+                ><button class="button" type="button">EN</button></li
+              >
+              <li class="footer__lang-item"
+                ><button class="button" type="button">CH</button></li
+              >
+            </ul>
+          </footer>
+        </section>
+      </aside>
+      <dialog class="modal modal__feedback modal--position--hidden">
+        <div class="modal__wrapper">
+        <button class="button modal__exit" type="button">
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./img/exit.svg"
+              alt="Закрыть меню"
+              class="button__noburger-image"
+            /> </div
+        ></button>
+        <h2 class="modal__title">Обратная связь</h2>
+        <form class="modal__form form">
+          <label for="name" class="visually-hidden">Введите имя</label>
+          <input
+            type="text"
+            class="modal__input form__name"
+            placeholder="Имя"
+            id="name"
+          />
+          <label for="tel" class="visually-hidden">Введите телефон</label>
+          <input
+            type="tel"
+            class="modal__input form__tel"
+            placeholder="Телефон"
+            id="tel"
+          />
+          <label for="mail" class="visually-hidden">Введите почту</label>
+          <input
+            type="email"
+            class="modal__input form__mail"
+            placeholder="Электронная почта"
+            id="mail"
+          />
+          <label for="message" class="visually-hidden">Введите сообщение</label>
+          <textarea
+            type="text"
+            class="modal__input form__message"
+            placeholder="Сообщение"
+            id="message"
+          ></textarea>
+        </form>
+        <p class="modal__disclame"
+          >Нажимая “отправить”, вы даете согласие на
+          <a>обработку персональных данных</a> и соглашаетесь с нашей
+          <a>политикой конфиденциальности</a></p
+        >
+        <button type="button" class="button modal__button"
+          ><div class="button__submit"
+            >отправить<img
+              src="./img/dropdown-white.svg"
+              alt="О бренде"
+              class="button__dropdown services__dropdown-img" /></div
+        ></button>
+      </div>
+      </dialog>
+      <dialog class="modal modal__call modal--position--hidden">
+        <div class="modal__wrapper">
+        <button class="button modal__exit" type="button">
+          <div class="icons-wrapper icons-wrapper--padding-top">
+            <img
+              src="./img/exit.svg"
+              alt="Закрыть меню"
+              class="button__noburger-image"
+            /> </div
+        ></button>
+        <h2 class="modal__title">Заказать звонок</h2>
+        <form class="modal__form form">
+          <label for="tel" class="visually-hidden">Введите телефон</label>
+          <input
+            type="tel"
+            class="modal__input form__tel"
+            placeholder="Телефон"
+            id="tel"
+          />
+        </form>
+        <p class="modal__disclame"
+          >Нажимая “отправить”, вы даете согласие на
+          <a>обработку персональных данных</a> и соглашаетесь с нашей
+          <a>политикой конфиденциальности</a></p
+        >
+        <button type="button" class="button modal__button"
+          ><div class="button__submit"
+            >отправить<img
+              src="./img/dropdown-white.svg"
+              alt="О бренде"
+              class="button__dropdown services__dropdown-img" /></div
+        ></button>
+        </div>
+      </div>
+    </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

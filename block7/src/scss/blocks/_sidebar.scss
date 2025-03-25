@@ -1,0 +1,112 @@
+.sidebar {
+  background-color: $color-white;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+  width: 100vw;
+  height: 100vh;
+  min-height: 670px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  @media (min-width: 361px) {
+    width: 320px;
+  }
+  &__header {
+    display: flex;
+    padding: 19px 24px;
+
+    @media (min-width: 1120px) {
+      padding-left: 5px;
+      margin-bottom: 11px;
+    }
+  }
+  &__link {
+    &:hover {
+      opacity: 0.6;
+      transition-duration: 0.2s;
+      cursor: pointer;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 12px 24px;
+    @media (min-width: 1120px) {
+      padding-block: 16px;
+    }
+
+    &:hover::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 6px;
+      display: block;
+      height: 32px;
+      width: 4px;
+      background-color: #41f6d7;
+      border-radius: 0 20px 20px 0;
+      @media (min-width: 1120px) {
+        top: 12px;
+      }
+    }
+  }
+  &__button {
+    @media (min-width: 1120px) {
+      display: none;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  &__mail {
+    display: block;
+    margin-bottom: 12px;
+    &:hover {
+      opacity: 0.6;
+      transition-duration: 0.2s;
+      cursor: pointer;
+    }
+  }
+  &__tel {
+    display: block;
+    font-weight: bold;
+    line-height: 133%;
+    letter-spacing: -0.03em;
+    font-size: 24px;
+    margin-bottom: 8px;
+    @media (min-width: 1120px) {
+      margin-bottom: 40px;
+    }
+    &:hover {
+      opacity: 0.6;
+      transition-duration: 0.2s;
+      cursor: pointer;
+    }
+  }
+  &__footer {
+    padding: 24px;
+    padding-top: 16px;
+  }
+  &--position--hidden {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    transition-duration: 1s;
+    box-shadow: none;
+    @media (min-width: 1120px) {
+      right: auto;
+
+      position: fixed;
+    }
+  }
+  &--position--vision {
+    right: calc(100% - 100vw);
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+      -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    @media (min-width: 361px) {
+      right: calc(100% - 320px);
+    }
+  }
+}

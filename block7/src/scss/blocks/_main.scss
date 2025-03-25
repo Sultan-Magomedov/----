@@ -1,0 +1,56 @@
+.main {
+  &__header {
+    font-size: 28px;
+    padding-left: 16px;
+    padding-top: 20px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+    @media (min-width: 1120px) {
+      position: relative;
+      padding-top: 42px;
+      padding-left: 35px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -4px;
+      display: block;
+      height: 40px;
+      width: 8px;
+      background-color: #41f6d7;
+      border-radius: 20px;
+      @media (min-width: 1120px) {
+        width: 3px;
+        left: 2px;
+      }
+    }
+  }
+  &--margin--left {
+    @media (min-width: 1120px) {
+      margin-left: 320px;
+    }
+  }
+  section {
+    border-bottom: 1px solid $color-aqua-extralight;
+    padding-bottom: 24px;
+    @media (min-width: 768px) {
+      padding-bottom: 32px;
+    }
+    @media (min-width: 1120px) {
+      padding-bottom: 50px;
+    }
+    &:last-child {
+      padding-bottom: 40px;
+      @media (min-width: 768px) {
+        padding-bottom: 47px;
+      }
+      @media (min-width: 1120px) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}

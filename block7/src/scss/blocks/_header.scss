@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  padding: 18px;
+  background-color: $color-white;
+
+  @media (min-width: 1120px) {
+    position: relative;
+    background-color: $color-background;
+    padding: 0;
+  }
+
+  &--border {
+    border-bottom: $color-aqua-extralight solid 1px;
+
+    @media (min-width: 1120px) {
+      border-bottom: none;
+    }
+  }
+  &__logo {
+
+    position: relative;
+
+    @media (min-width: 768px) {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        width: 2px;
+        height: 32px;
+        background-color: $color-gray;
+      }
+    }
+    @media (min-width: 1120px) {
+    display: none;
+    }
+  }
+}

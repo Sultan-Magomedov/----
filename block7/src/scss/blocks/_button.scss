@@ -1,0 +1,114 @@
+.button {
+  &:hover {
+    opacity: 0.6;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+
+  &__dropdown {
+    margin-left: 15px;
+    margin-top: 12px;
+  }
+  &__submit {
+    background-color: $color-pink;
+    color: $color-white;
+    width: 136px;
+    height: 32px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    padding-inline: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+  }
+  &--hide {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    @media (min-width: 1120px) {
+      display: none;
+    }
+  }
+
+  &--vision {
+    display: block;
+    @media (min-width: 1120px) {
+      display: none;
+    }
+  }
+
+  &--margin--standart {
+    margin-right: 16px;
+  }
+
+  &--margin--huge {
+    margin-right: 42px;
+  }
+
+  &--position--right {
+    margin-left: auto;
+  }
+
+  &--position--normal {
+    position: relative;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
+    @media (min-width: 1120px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &--content-repair--before:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -22px;
+    top: 10px;
+    width: 2px;
+    height: 32px;
+    background-color: $color-gray;
+    @media (min-width: 1120px) {
+      content: 'Оставить заявку';
+      position: static;
+      width: auto;
+      height: auto;
+      background-color: $color-background;
+      font-weight: 500;
+      margin-right: 8px;
+    }
+  }
+  &--check-status--position-right {
+    @media (min-width: 1120px) {
+      position: absolute;
+      right: 30px;
+      top: 42px;
+      z-index: 1;
+    }
+  }
+  &--repair--position-left {
+    @media (min-width: 1120px) {
+      position: absolute;
+      right: 200px;
+      top: 42px;
+      z-index: 1;
+    }
+  }
+  &--content-check-status--before:before {
+    @media (min-width: 1120px) {
+      content: 'Статус ремонта';
+      font-weight: 500;
+      margin-right: 8px;
+    }
+  }
+}

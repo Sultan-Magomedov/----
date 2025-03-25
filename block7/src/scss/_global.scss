@@ -1,0 +1,79 @@
+@import 'variables';
+body {
+  font-family: $font-main;
+  color: $color-text-regular;
+  background-color: $color-background;
+  font-weight: 500;
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin-inline: auto;
+  &--overflow--hidden {
+    overflow: hidden;
+    height: 100vh;
+    min-height: 640px;
+  }
+}
+
+.icons-wrapper {
+  background-color: $color-pink;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  img {
+    margin-inline: auto;
+  }
+  &--padding-top {
+    padding-top: 11px;
+  }
+
+  &--padding-top--ten {
+    padding-top: 10px;
+  }
+
+  &--padding-top--twelve {
+    padding-top: 12px;
+  }
+
+  &--margin-right {
+    @media (min-width: 768px) {
+      margin-right: 26px;
+    }
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.outside {
+  &--position--hidden {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-white;
+    opacity: 0.96;
+    transform: translate(-100vw);
+    transition-duration: 1s;
+    z-index: 2;
+  }
+  &--position--vision {
+    transform: translate(0);
+  }
+}

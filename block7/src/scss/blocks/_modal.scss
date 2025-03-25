@@ -1,0 +1,97 @@
+.modal {
+  background-color: $color-white;
+  width: 100vw;
+  max-width: 440px;
+  height: 100vh;
+  min-height: 676px;
+  border: none;
+  overflow: visible;
+  margin: 0;
+  margin-left: auto;
+  @media (min-width: 440px) {
+    border-left: 1px solid $color-aqua-extralight;
+  }
+  &::backdrop {
+    animation-name: backdropMoving;
+    animation-duration: 1s;
+    background: $color-white;
+    opacity: 0.96;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__input {
+    border: 1px solid $color-gray;
+    border-radius: 8px;
+    padding: 12px 16px;
+    line-height: 138%;
+  }
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 24px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      display: block;
+      height: 40px;
+      width: 4px;
+      background-color: $color-aqua;
+      border-radius: 0 20px 20px 0;
+      top: 105px;
+      @media (min-width: 520px) {
+        width: 3px;
+        top: 32px;
+      }
+    }
+  }
+  &__disclame {
+    padding-top: 16px;
+    padding-bottom: 19px;
+    font-size: 14px;
+    line-height: 114%;
+    color: $color-text-light;
+    a {
+      color: $color-pink;
+    }
+  }
+  &__exit {
+    @media (min-width: 520px) {
+      position: absolute;
+      left: -74px;
+      top: 32px;
+    }
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+  }
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 24px 4% 75px 4%;
+    @media (min-width: 520px) {
+      padding: 0 32px 75px 32px;
+    }
+  }
+  &--position--hidden {
+    transform: translate(100%);
+    transition-duration: 1s;
+  }
+  &--position--vision {
+    transform: translate(0);
+  }
+}
+@keyframes backdropMoving {
+  0% {
+    transform: translate(100vw);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
